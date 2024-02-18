@@ -37,10 +37,12 @@ export const Projects = () => {
 
                     {projectsData.length > 3 && (
                         <div className="projects--viewAll flex items-center justify-end p-[2rem] mt-[2rem] w-full ">
+                            <a href='https://github.com/SamarAhar?tab=repositories' target='blank' >
                                 <button className='bg-[#f56539] text-[#eaeaea] pr-[0.25rem] transition duration-200 hover:text-[#212121] hover:bg-[#f56539] '>
                                     View All
                                     <HiArrowRight className='text-[#eaeaea] bg-[#212121b3] w-[40px] h-[40px] p-[0.5rem] text-[1.05rem] rounded-[50%] cursor-pointer transition duration-200 hover:text-[#eaeaea] hover:bg-[#212121] ' />
                                 </button>
+                            </a>
                         </div>
                     )}
                 </div>

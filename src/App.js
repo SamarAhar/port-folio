@@ -1,34 +1,23 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BackToTop } from './components/backToTop/BackToTop';
+import ScrollToTop from "./utils/ScrollToTop"
+import Main from './pages/main/Main';
 
-import './App.css';
-import Navbar from "../src/components/navbar/Navbar"
-import Landing from './components/landing/Landing';
-import About from './components/about/About';
-import { Education } from './components/education/Education';
-import Skills from './components/skills/Skills';
-import Projects from './components/projects/Projects';
-import Achivement from './components/achivement/Achivement';
-import Blog from './components/blogs/Blog';
-import Contacts from './components/contacts/Contacts';
-import BackToTop from './components/backToTop/BackToTop';
-import Footer from './components/footer/Footer';
-// import Experience from './components/experience/Experience';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Landing />
-      <About />
-      <Education />
-      <Skills />
-      {/* <Experience /> */}
-      <Projects />
-      <Achivement />
-      <Blog />
-      <Contacts />
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          {/* <Route path="/blog" element={<BlogPage />} /> */}
+          {/* <Route path="/projects" element={<ProjectPage />} /> */}
+        </Routes>
+      </Router>
       <BackToTop />
-      <Footer />
-    </div>
+    </div> 
   );
 }
 

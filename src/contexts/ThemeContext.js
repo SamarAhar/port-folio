@@ -7,15 +7,10 @@ export const ThemeContext = createContext()
 function ThemeContextProvider(props) {
     // eslint-disable-next-line
     const [theme, setTheme] = useState(themeData.theme)
-    const [drawerOpen, setDrawerOpen] = useState(false)
-
-    const setHandleDrawer = () => {
-        setDrawerOpen(!drawerOpen)
-    }
 
 
 
-    const value = { theme, drawerOpen, setHandleDrawer }
+    const value = { theme }
     return (
         <ThemeContext.Provider value={value}>
             {props.children}

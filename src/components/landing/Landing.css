@@ -62,7 +62,8 @@
       justify-content: space-between;
     }
     .landing--img {
-      --img-size: 200px;
+      width: 200px;
+      height: 200px;
       left: 50%;
       top: 30%;
       border: 8px solid #eaeaea;
@@ -72,6 +73,7 @@
       flex: initial;
       width: 100%;
       height: 30%;
+      background-color: #f56539;
     }
     .landing--social {
       display: none;
@@ -82,7 +84,7 @@
       flex: initial;
       height: 70%;
       width: 100%;
-      background-color: #eaeaea;
+      background-color: #212121;
       align-items: center;
       justify-content: center;
       padding: 0 2rem;
@@ -131,6 +133,7 @@
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     .landing {
       height: 100%;
+      width: 100%;
     }
   
     .landing--img {

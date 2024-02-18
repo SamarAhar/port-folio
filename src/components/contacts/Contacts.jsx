@@ -183,7 +183,7 @@ export const Contacts = () => {
                     toast.error("error"); */}
                 </div>
 
-                <div className='contacts-details flex flex-col items-start justify-evenly flex-[0.6] box-border pl-[7rem] mt-[1.2rem] '>
+                <div className='contacts-details flex flex-col items-start justify-evenly flex-[0.7] box-border pl-[7rem] mt-[1.2rem] w-full '>
                     <a
                         href={`mailto:${contactsData.email}`}
                         className='personal-details flex flex-row items-center justify-start w-full mb-[2.5rem] '

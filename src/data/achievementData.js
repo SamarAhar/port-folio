@@ -3,7 +3,7 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : 'Google Cloud certification',
+            title : 'Web Development - [MERN Stack]',
             details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
             date : 'Aug 20, 2019',
             field : 'Automation',

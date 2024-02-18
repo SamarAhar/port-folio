@@ -15,7 +15,8 @@ export const Skills = () => {
     }
 
   return (
-    <div className="skills flex flex-col items-center justify-start min-h-[60vh] p-[2.5rem_2rem_2rem_2rem] " style={{backgroundColor: theme.secondary}}>
+    <div className="skills flex flex-col items-center justify-start min-h-[60vh] p-[2.5rem_2rem_2rem_2rem] " 
+        id="skills" style={{backgroundColor: theme.secondary}}>
         <div className="skillsHeader flex items-center justify-center">
             <h2 className='text-[3.5rem] font-bold text-center not-italic ' 
                 style={{color: theme.primary}}>

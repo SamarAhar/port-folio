@@ -14,7 +14,7 @@ export const Blog = () => {
     <div>
         {blogData.length > 0 && (
             <div className="blog flex flex-col items-center justify-start min-h-[100vh] p-[2rem] overflow-x-hidden " 
-            id="blog" style={{backgroundColor: theme.secondary}}>
+            id="blogs" style={{backgroundColor: theme.secondary}}>
                 <div className="blog--header flex items-center justify-center w-full m-[1rem] ">
                     <h1 className='mb-[40px] text-[3.5rem] ' style={{color: theme.primary}}>Blog</h1>
                 </div>
